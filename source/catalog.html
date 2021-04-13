@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" src="./img/logotype-mobile.svg" width="101px" height="84px" alt="Седона">
+        <img class="page-header__logo-img" src="./img/logotype-mobile.svg" width="101" height="84" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -34,51 +35,75 @@
               </a>
             </li>
           </ul>
+        </div>
       </nav>
     </header>
     <main class="page-catalog">
-      <div class="page-catalog__image"></div>
-      <h2 class="page-catalog-title">Фото и видео</h2>
+      <h1 class="page-catalog__title">
+        <img class="welcome-img" src="./img/sedona.svg" width="901" height="389" alt="Седона">
+      </h1>
+      <section class="page-catalog__image">
+      <h2 class="page-catalog-subtitle">Фото и видео</h2>
       <p class="page-catalog-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <ul class="page-catalog-list catalog-list">
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
-            <img class="catalog-list__link-img" scr="./img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+            <img class="catalog-list__link-img" src="./img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
           </a>
           <h3 class="catalog-list__title">Неродные просторы</h3>
-          <p class="catalog-list__author">Автор фото:Борис</p>
+          <p class="catalog-list__author">Автор фото: Борис</p>
           <a href="" aria-label="Проголосовать /результат голосования">1350</a>
         </li>
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
-            <img class="catalog-list__link-img" scr="" width="280" height="280" alt="">
+            <img class="catalog-list__link-img" src="./img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
           </a>
-          <h3 class="catalog-list__title"></h3>
-          <p class="catalog-list__author"></p>
+          <h3 class="catalog-list__title">Местная растительность</h3>
+          <p class="catalog-list__author">Автор фото: Сергей</p>
+          <a href="" aria-label="Проголосовать /результат голосования">143</a>
         </li>
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
-            <img class="catalog-list__link-img" scr="" width="280" height="280" alt="">
+            <img class="catalog-list__link-img" src="./img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
           </a>
-          <h3 class="catalog-list__title"></h3>
-          <p class="catalog-list__author"></p>
+          <h3 class="catalog-list__title">Дорога на север</h3>
+          <p class="catalog-list__author">Автор фото: Петр</p>
+          <a href="" aria-label="Проголосовать /результат голосования">96</a>
         </li>
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
-            <img class="catalog-list__link-img" scr="" width="280" height="280" alt="">
+            <img class="catalog-list__link-img" src="./img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
           </a>
-          <h3 class="catalog-list__title"></h3>
-          <p class="catalog-list__author"></p>
+          <h3 class="catalog-list__title">Мост дьявола</h3>
+          <p class="catalog-list__author">Автор фото: Антон</p>
+          <a href="" aria-label="Проголосовать /результат голосования">254</a>
         </li>
       </ul>
-      </div>
-      <div class="page-catalog__video">
-        <h2 class="page-catalog-title">Вы ещё сомневаетесь?</h2>
+      </section>
+      <section class="page-catalog__video">
+        <h2 class="page-catalog-subtitle">Вы ещё сомневаетесь?</h2>
         <p class="page-catalog-text">Смотрите видео презентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <a class="catalog-list__link" href="#">
-          <img class="catalog-list__link-img" scr="" width="280" height="280" alt="">
+        <a class="catalog__video-link" href="#">
+          <img class="catalog__video-link-img" src="./img/video-mobile.jpg" width="280" height="280" alt="">
         </a>
-      </div>
+        <div class="form__section--video">
+          <div class="range-container">
+              <div class="video-range"></div>
+              <a class="range-handle range-handle--pleer" href="#" aria-label="Воспроизвести"></a>
+              <ul class="video-range-list">
+                <li class="video-range-item">
+                  <a class="video-button" href="#">Повторить</a>
+                </li>
+                <li class="video-range-item">
+                  <a class="video-button" href="#">Субтитры</a>
+                </li>
+                <li class="video-range-item">
+                  <a class="video-button" href="#">Раскрыть на весь экран</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social">
