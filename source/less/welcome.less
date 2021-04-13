@@ -1,0 +1,33 @@
+.welcome {
+ position: relative;
+ background: #3f4a69 url("../img/sedona-welcome.svg") no-repeat bottom center;
+  background-size: cover;
+  padding: 69px 20px 66px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.welcome::after {
+  content: "";
+  width: 1200px;
+  height: 57px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: url("../img/triangle.svg") no-repeat center bottom;
+
+}
+.welcome__text {
+
+}
+
+.welcome-img {
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+  display: block;
+}
