@@ -1,12 +1,12 @@
 .welcome {
  position: relative;
- background: #3f4a69 url("../img/sedona-welcome.svg") no-repeat bottom center;
+ background: #3f4a69 url("../img/back-mobile.jpg") no-repeat bottom center;
   background-size: cover;
   padding: 69px 20px 66px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .welcome::after {
@@ -19,7 +19,7 @@
   transform: translateX(-50%);
   bottom: 0;
   background: url("../img/triangle.svg") no-repeat center bottom;
-
+  background-size: cover;
 }
 .welcome__text {
 
@@ -30,4 +30,30 @@
   height: 214px;
   margin: 0 auto;
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    background: url(../img/back-tablet.jpg) no-repeat bottom center;
+    padding: 55px 20px 71px;
+    background-size: cover;
+  }
+  .welcome-img {
+    width: 461px;
+    height: 350px;
+  }
+  .welcome::after {
+    background: url("../img/intro-triangle-tablet.svg") no-repeat center bottom;
+  }
+}
+@media (min-width: @desktop-width) {
+  .welcome {
+    background: url(../img/back-desktop.jpg) no-repeat top center;
+    padding: 55px 20px 71px;
+    background-size: cover;
+    margin-bottom: 43px;
+  }
+  .welcome::after {
+    background: url("../img/intro-triangle-desktop.svg") no-repeat center bottom;
+  }
 }

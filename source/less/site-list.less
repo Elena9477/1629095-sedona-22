@@ -1,12 +1,15 @@
 .site-list {
- padding: 0;
- margin: 0;
- list-style: none;
- background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 .site-list__item {
-
 }
 
 .site-list__link {
@@ -16,8 +19,8 @@
   text-align: center;
   text-transform: uppercase;
   display: block;
-  color: #FFFFFF;
-  background: #81B3D2;
+  color: #ffffff;
+  background: #81b3d2;
   padding-top: 9px;
   padding-bottom: 5px;
   border-top: 1px solid #98bfde;
@@ -25,22 +28,80 @@
 }
 
 .site-list__link:hover {
-  background: #669EC0;
+  background: #669ec0;
 }
 
 .site-list__link:active {
-  background: #5496BD;
+  background: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .site-list__item:first-child .site-list__link {
-  border-top: 1px solid #81B3D2;
+  border-top: 1px solid #81b3d2;
 }
 
-.site-list__item:last-child .site-list__link{
-  border-bottom: 1px solid #81B3D2;
+.site-list__item:last-child .site-list__link {
+  border-bottom: 1px solid #81b3d2;
 }
 
 .site-list__link--active {
+}
 
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: none;
+    margin: 0 29px 0 48px;
+  }
+  .site-list__item {
+    text-align: left;
+  }
+  .site-list__link {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .site-list__item:last-child .site-list__link {
+    border: none;
+  }
+  .site-list__item:first-child .site-list__link {
+    border-top: none;
+  }
+
+  .site-list__item:nth-child(4n + 2) {
+    padding-right: 20px;
+  }
+  .site-list__item:nth-child(4n + 3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: right;
+    padding-right: 9px;
+  }
+  .site-list__item:nth-child(4n + 4) {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    text-align: right;
+  }
+}
+@media (min-width: @desktop-width) {
+  .site-list {
+    margin: 0;
+  }
+  .site-list__item {
+    text-align: center;
+  }
+  .site-list__item:nth-child(4n+2) {
+    padding-right: 4px;
+  }
+  .site-list__item:nth-child(4n + 3) {
+    text-align: center;
+    padding-right: 0;
+  }
+  .site-list__item:nth-child(4n + 4) {
+    text-align: center;
+  }
 }
