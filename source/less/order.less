@@ -43,7 +43,7 @@
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   min-width: 209px;
   padding: 14px 37px 18px;
   display: inline-block;
@@ -57,11 +57,46 @@
 }
 
 .order-button:hover {
-  background-color:#669EC0;
+  background-color: #669ec0;
 }
 
 .order-button:active {
-  background-color: #5496BD;
+  background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+.order-break {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .order {
+    margin-bottom: 155px;
+  }
+  .order__title {
+    font-size: 30px;
+    line-height: 26px;
+    padding: 0 0 33px;
+  }
+  .order__list-item {
+
+  }
+  .order__list-title {
+    width: 619px;
+  }
+  .order-button  {
+    min-width: 383px;
+    margin: 40px auto 0;
+  }
+  .order-break {
+    display: block;
+  }
+}
+@media (min-width: @desktop-width) {
+  .order {
+    margin-bottom: 167px;
+  }
+  .order-break {
+    display: block;
+  }
 }
 
