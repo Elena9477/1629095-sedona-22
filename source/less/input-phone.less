@@ -1,0 +1,32 @@
+.input-phone {
+}
+.input-phone__label {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.input-phone__container {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6;
+    z-index: 1;
+    display: block;
+  }
+}
+.input-phone__input {
+  width: calc(100% - 58px);
+  height: 58px;
+  box-sizing: border-box;
+  padding-right: 65px;
+  z-index: 10;
+  position: relative;
+  border: none;
+  background: red;
+}
