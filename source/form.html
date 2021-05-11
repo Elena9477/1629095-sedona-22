@@ -46,14 +46,14 @@
     </h1>
     <section class="review">
       <h2 class="review__title">Оставьте свой отзыв</h2>
-      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях/p>
+      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
-          <section class="review__form-information">
-            <h2 class="review__form-title">Представьтесь:</h2>
-            <p class="review__form-information information-name">
-              <label class="information-label" for="name">Имя*:</label>
+          <section class="information">
+            <h2 class="information__title">Представьтесь:</h2>
+            <p class="information__item input-text">
+              <label class="input-text__label" for="name">Имя*:</label>
               <input
-                class="information-input name"
+                class="input-text__input"
                 id="name"
                 type="text"
                 name="name"
@@ -61,43 +61,45 @@
                 required
               />
             </p>
-            <p class="review__form-information information-name">
-              <label class="information-label" for="surname">Фамилия*:</label>
+            <p class="information__item input-text">
+              <label class="input-text__label" for="surname">Фамилия*:</label>
               <input
-                class="information-input name"
+                class="input-text__input"
                 id="surname"
                 type="text"
                 name="surname"
                 placeholder="Иванов"
                 required
               />
-              <p class="review__form-information information-name">
-                <label class="information-label" for="patronymic">Отчество:</label>
+              <p class="information__item input-text">
+                <label class="input-text__label" for="patronymic">Отчество:</label>
                 <input
-                  class="information-input name"
+                  class="input-text__input"
                   id="patronymic"
                   type="text"
                   name="patronymic"
                   placeholder="Александрович"
                 />
               </section>
-          <section class="review__form-information">
-            <h2 class="review__form-title">Контактная информация:</h2>
-            <p class="review__form-information information-contacts">
-              <label class="information-label" for="telephone">Контактный телефон*:</label>
+          <section class="user-contacts">
+            <h2 class="user-contacts__title">Контактная информация:</h2>
+            <p class="user-contacts__item input-phone">
+              <label class="input-phone__label" for="telephone">Контактный телефон*:</label>
+              <div class="input-phone__container">
               <input
-                class="modal-input mail"
+                class="input-phone__input"
                 id="telephone"
                 type="text"
                 name="telephone"
                 placeholder="Введите телефон"
                 required
               />
+            </div>
             </p>
-            <p class="review__form-information information-contacts">
+            <p class="contacts__item">
               <label class="information-label" for="email">Электронная почта*:</label>
               <input
-                class="modal-input mail"
+                class="input-phone__input"
                 id="email"
                 type="text"
                 name="email"
@@ -106,50 +108,50 @@
               />
             </p>
           </section>
-          <section class="review__form-information">
-            <h2 class="review__form-title">Ваше общее впечатление:</h2>
-          <ul class="review__form-list grid-type-list">
-            <li class="grid-type-item radio">
-              <input class="radio-input visually-hidden" type="radio" name="grid-type" id="Rather-positive" value="Скорее положительное" checked>
-              <label class="radio-label" for="Rather-positive">Скорее положительное</label>
+          <section class="impressions">
+            <h2 class="impressions-title">Ваше общее впечатление:</h2>
+          <ul class="impressions-list">
+            <li class="impressions-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="impression" id="positive" value="Скорее положительное" checked>
+              <label class="radio__label" for="positive">Скорее положительное</label>
             </li>
-            <li class="grid-type-item radio">
-              <input class="radio-input visually-hidden" type="radio" name="grid-type" id="rather-negative" value="Скорее отрицательное">
-              <label class="radio-label" for="rather-negative">Скорее отрицательное</label>
+            <li class="impressions-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="impression" id="negative" value="Скорее отрицательное">
+              <label class="radio__label" for="negative">Скорее отрицательное</label>
             </li>
-            <li class="grid-type-item radio">
-              <input class="radio-input visually-hidden" type="radio" name="grid-type" id="cant-answer" value="Затрудняюсь ответить">
-              <label class="radio-label" for="cant-answer">Затрудняюсь ответить</label>
+            <li class="impressions-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="impression" id="cant-answer" value="Затрудняюсь ответить">
+              <label class="radio__label" for="cant-answer">Затрудняюсь ответить</label>
             </li>
           </ul>
           </section>
-          <section class="review__form-information">
-            <h2 class="review__form-title">Посещенные достопримичательности:</h2>
-            <ul class="review__form-list grid-type-list">
-              <li class="grid-type-item checkbox">
+          <section class="attractions">
+            <h2 class="attractions-title">Посещенные достопримичательности:</h2>
+            <ul class="attractions-list">
+              <li class="attractions-list__item checkbox">
                 <input class="checkbox-input visually-hidden" type="checkbox" name="Devil's bridge" id="Devil's-bridge" checked>
-                <label class="checkbox-label" for="Devil's-bridge">Мост дьявола</label>
+                <label class="checkbox-label" for="Devil's-bridge">Мост Дьявола</label>
               </li>
-              <li class="grid-type-item checkbox">
+              <li class="attractions-list__item checkbox">
                 <input class="checkbox-input visually-hidden" type="checkbox" name="Bell mountain" id="Bell-mountain" checked>
-                <label class="checkbox-label" for="Bell-mountain">Гора-колокол</label>
+                <label class="checkbox-label" for="Bell-mountain">Гора-Колокол</label>
               </li>
-              <li class="grid-type-item checkbox">
+              <li class="attractions-list__item checkbox">
                 <input class="checkbox-input visually-hidden" type="checkbox" name="Slide park" id="Slide-park" checked>
                 <label class="checkbox-label" for="Slide-park">Слайд-парк</label>
               </li>
-              <li class="grid-type-item checkbox">
+              <li class="attractions-list__item checkbox">
                 <input class="checkbox-input visually-hidden" type="checkbox" name="Red rocks" id="Red-rocks">
                 <label class="checkbox-label" for="Red-rocks">Красные скалы</label>
               </li>
             </ul>
           </section>
-          <section class="review__form-information">
-            <h2 class="review__form-title">Опишите свои эмоции:</h2>
-            <p class="review__form-information information-message">
-              <label class="information-label" for="message">Текст</label>
+          <section class="review__form-information letter">
+            <h2 class="letter-title">Опишите свои эмоции:</h2>
+            <p class="letter-information message">
+              <label class="message-label" for="message">Текст</label>
               <textarea
-                class="information-message-text"
+                class="message-text"
                 id="message"
                 name="message"
                 placeholder="Опишите подробно все свои восторги"
