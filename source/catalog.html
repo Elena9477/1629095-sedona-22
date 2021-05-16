@@ -37,9 +37,7 @@
                 <a class="site-list__link" href="index.html"> Главная </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link">
-                  фото и видео
-                </a>
+                <a class="site-list__link"> фото и видео </a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html"> форма отзыва </a>
@@ -86,6 +84,30 @@
             <a class="catalog__image-link" href="#">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/photo-1-desktop.webp    1x,
+                    ./img/photo-1-desktop-2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/photo-1-tablet.webp    1x,
+                    ./img/photo-1-tablet-2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./img/photo-1-mobile.webp    1x,
+                    ./img/photo-1-tablet-2x.webp 2x
+                  "
+                />
+                <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./img/photo-1-desktop.jpg    1x,
@@ -108,20 +130,43 @@
               </picture>
             </a>
             <div class="catalog__image-block--first">
-            <h3 class="catalog__image-subtitle">Неродные просторы</h3>
-            <p class="catalog__image-author">Автор фото: Борис</p>
-            <a
-              class="catalog__image-like catalog__image-like--first"
-              href=""
-              aria-label="Проголосовать/результат голосования"
-              >1350</a
-            >
-          </div>
+              <h3 class="catalog__image-subtitle">Неродные просторы</h3>
+              <p class="catalog__image-author">Автор фото: Борис</p>
+              <a
+                class="catalog__image-like catalog__image-like--first"
+                href=""
+                aria-label="Проголосовать/результат голосования"
+                >1350</a
+              >
+            </div>
           </div>
           <ul class="catalog__image-list">
             <li class="catalog__image-item">
               <a class="catalog__image-link" href="#">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/photo-2-desktop.webp    1x,
+                      ./img/photo-2-desktop-2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/photo-2-tablet.webp    1x,
+                      ./img/photo-2-tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 320px)"
+                    srcset="
+                    ./img/photo-2-mobile.webp
+                    ./img/photo-2-mobile-2x.webp 2x"
+                  />
                   <source
                     media="(min-width: 1200px)"
                     srcset="
@@ -145,19 +190,42 @@
                 </picture>
               </a>
               <div class="catalog__image-block-like">
-              <h3 class="catalog__image-subtitle">Местная растительность</h3>
-              <p class="catalog__image-author">Автор фото: Сергей</p>
-              <a
-                class="catalog__image-like catalog__image-like-list"
-                href=""
-                aria-label="Проголосовать /результат голосования"
-                >143</a
-              >
-            </div>
+                <h3 class="catalog__image-subtitle">Местная растительность</h3>
+                <p class="catalog__image-author">Автор фото: Сергей</p>
+                <a
+                  class="catalog__image-like catalog__image-like-list"
+                  href=""
+                  aria-label="Проголосовать /результат голосования"
+                  >143</a
+                >
+              </div>
             </li>
             <li class="catalog__image-item">
               <a class="catalog__image-link" href="#">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/photo-3-desktop.webp   1x,
+                      ./img/photo-3-desktop-2.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/photo-3-tablet.webp    1x,
+                      ./img/photo-3-tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 320px)"
+                    srcset="
+                    ./img/photo-3-mobile.webp
+                    ./img/photo-2-mobile-2x.webp 2x"
+                  />
                   <source
                     media="(min-width: 1200px)"
                     srcset="
@@ -181,19 +249,43 @@
                 </picture>
               </a>
               <div class="catalog__image-block-like">
-              <h3 class="catalog__image-subtitle">Дорога на север</h3>
-              <p class="catalog__image-author">Автор фото: Петр</p>
-              <a
-                class="catalog__image-like catalog__image-like-list"
-                href="#"
-                aria-label="Проголосовать /результат голосования"
-                >96</a
-              >
+                <h3 class="catalog__image-subtitle">Дорога на север</h3>
+                <p class="catalog__image-author">Автор фото: Петр</p>
+                <a
+                  class="catalog__image-like catalog__image-like-list"
+                  href="#"
+                  aria-label="Проголосовать /результат голосования"
+                  >96</a
+                >
               </div>
             </li>
             <li class="catalog__image-item">
               <a class="catalog__image-link" href="#">
-                <picture>
+                <picture
+                  ><source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/photo-4-desktop.webp    1x,
+                      ./img/photo-4-desktop-2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/photo-4-tablet.webp    1x,
+                      ./img/photo-4-tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/photo-4-mobile.webp    1x,
+                      ./img/photo-4-mobile-2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 1200px)"
                     srcset="
@@ -217,14 +309,14 @@
                 </picture>
               </a>
               <div class="catalog__image-block-like">
-              <h3 class="catalog__image-subtitle">Мост дьявола</h3>
-              <p class="catalog__image-author">Автор фото: Антон</p>
-              <a
-                class="catalog__image-like catalog__image-like-list"
-                href=""
-                aria-label="Проголосовать /результат голосования"
-                >254</a
-              >
+                <h3 class="catalog__image-subtitle">Мост дьявола</h3>
+                <p class="catalog__image-author">Автор фото: Антон</p>
+                <a
+                  class="catalog__image-like catalog__image-like-list"
+                  href=""
+                  aria-label="Проголосовать /результат голосования"
+                  >254</a
+                >
               </div>
             </li>
           </ul>
@@ -238,6 +330,30 @@
           <div class="catalog-video__container">
             <div class="catalog-video__container-video">
               <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/video-desktop.webp    1x,
+                    ./img/video-desktop-2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/video-tablet.webp    1x,
+                    ./img/video-tablet-2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./img/video-mobile.webp    1x,
+                    ./img/video-mobile-2x.webp 2x
+                  "
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -343,21 +459,27 @@
             <ul class="contacts__social-list">
               <li class="contacts__social-item">
                 <a
-                  class="contacts__social-button contacts__social-button--twitter"
+                  class="
+                    contacts__social-button contacts__social-button--twitter
+                  "
                   href="#"
                   aria-label="Мы в твитере"
                 ></a>
               </li>
               <li class="contacts__social-item">
                 <a
-                  class="contacts__social-button contacts__social-button--facebook"
+                  class="
+                    contacts__social-button contacts__social-button--facebook
+                  "
                   href="#"
                   aria-label="Мы в Фейсбуке"
                 ></a>
               </li>
               <li class="contacts__social-item">
                 <a
-                  class="contacts__social-button contacts__social-button--youtube"
+                  class="
+                    contacts__social-button contacts__social-button--youtube
+                  "
                   href="#"
                   aria-label="Мы в Ютубе"
                 ></a>
