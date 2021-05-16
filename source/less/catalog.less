@@ -166,7 +166,7 @@
     border: none;
     padding: 0 0 15px;
     margin-bottom: 0;
-    background: red;
+    background: #f2f2f2;
     box-sizing: border-box;
     margin-left: 21px;
     margin-right: 21px;
@@ -175,7 +175,7 @@
   .catalog__image-pic {
   }
   .catalog__image-subtitle {
-    padding: 5px 0 0 20px;
+    padding: 6px 0 0 20px;
   }
   .catalog__image-author {
     padding: 1px 0 0 19px;
@@ -184,19 +184,23 @@
   }
   .catalog__image-like--first {
     position: absolute;
-    right: 41px;
-    bottom: 9px;
+    right: 20px;
+    bottom: 24px;
   }
   .catalog__image-like-list {
     position: absolute;
-    right: 25px;
-    bottom: 25px;
+    right: 29px;
+    bottom: 26px;
+  }
+  .catalog__image-like::before {
+    left: 5px;
+    top: -2px;
   }
   .catalog__image-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 20px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
   .catalog__image-item {
     box-sizing: border-box;
