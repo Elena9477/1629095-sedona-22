@@ -1,9 +1,33 @@
 .information {
-  padding: 20px 20px;
-  border-bottom: 1px solid red;
-  border-top: 1px solid red;
+  padding: 20px 20px 4px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 21px;
 }
-
+.information__title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: "PT SansB", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
 .information__item {
   margin-bottom: 20px;
+}
+@media (min-width: @tablet-width) {
+  .information {
+    order: 2;
+    width: 50%;
+    padding: 0 60px 0 0;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+  .information__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

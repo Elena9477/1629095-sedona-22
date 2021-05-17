@@ -1,4 +1,4 @@
-.checkbox-label {
+.checkbox__label {
   position: relative;
   font-family: "PT SansB", Arial, sans-serif;
   padding-left: 35px;
@@ -18,7 +18,7 @@
     background: url(../img/tick-checkbox.svg) no-repeat top left;
     width: 23px;
     height: 16px;
-    display: block;
+    display: none;
     position: absolute;
     left: 20px;
     top: 20px;
@@ -33,5 +33,20 @@
     display: block;
     left: 0;
     top: 0;
+
   }
+}
+.checkbox__input:checked + .checkbox__label::after {
+    display: block;
+}
+.checkbox__input:active + .checkbox__label::after {
+  opacity: 0.3;
+}
+.checkbox__label:hover::before {
+  background: #E5E5E5;
+
+}
+.checkbox__label:active::before {
+  background: #D5D5D5;
+
 }

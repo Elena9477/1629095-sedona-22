@@ -1,0 +1,38 @@
+.sights {
+  padding: 0 20px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 21px;
+}
+.sights__title{
+  font-family: "PT SansB", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.sights__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sights__item {
+  margin-bottom: 32px;
+}
+@media (min-width: @tablet-width) {
+  .sights {
+    order: 4;
+    width: 100%;
+    padding: 0 60px;
+    border-bottom: none;
+  }
+  .sights__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
