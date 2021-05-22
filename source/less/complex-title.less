@@ -7,15 +7,16 @@
   text-transform: uppercase;
 }
 
-.complex-title__text {
-}
 @media (min-width: @tablet-width) {
+
   .complex-title {
+    margin: 0;
     font-size: 21px;
     line-height: 26px;
     margin-left: 0;
     margin-right: 0;
     position: relative;
+
     &::before {
       content: "";
       width: 100%;
@@ -28,6 +29,7 @@
       z-index: 1;
     }
   }
+
   .complex-title__text {
     background: #ffffff;
     padding-left: 62px;
@@ -37,5 +39,14 @@
     position: relative;
     z-index: 10;
     max-width: 289px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .complex-title::before {
+    width: 89%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
   }
 }
