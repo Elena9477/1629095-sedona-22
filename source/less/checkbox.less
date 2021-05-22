@@ -33,20 +33,40 @@
     display: block;
     left: 0;
     top: 0;
-
   }
 }
+
 .checkbox__input:checked + .checkbox__label::after {
-    display: block;
+  display: block;
 }
+
 .checkbox__input:active + .checkbox__label::after {
   opacity: 0.3;
 }
+
 .checkbox__label:hover::before {
-  background: #E5E5E5;
-
+  background: #e5e5e5;
 }
-.checkbox__label:active::before {
-  background: #D5D5D5;
 
+.checkbox__label:active::before {
+  background: #d5d5d5;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  background: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+
+  .checkbox__label {
+    padding-left: 84px;
+    padding-top: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .checkbox__label {
+    padding-left: 81px;
+  }
 }

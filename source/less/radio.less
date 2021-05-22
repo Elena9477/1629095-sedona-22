@@ -22,6 +22,7 @@
     left: 2px;
     top: 5px;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -34,6 +35,7 @@
     display: none;
   }
 }
+
 .radio__label:hover::before {
   background: #e5e5e5;
 }
@@ -41,9 +43,22 @@
 .radio__input:checked + .radio__label::after {
   display: block;
 }
+
 .radio__input:active + .radio__label::before {
   background: #d5d5d5;
 }
+
 .radio__input:active + .radio__label::after {
   background: rgba(51, 51, 51, 0.3);
+}
+
+.radio__input:focus + .radio__label::before {
+  background: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+
+  .radio__label {
+    padding-left: 76px;
+  }
 }

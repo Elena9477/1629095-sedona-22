@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
-    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" />
+    <link rel="preload" href="./fonts/ptsans.woff" as="font" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" />
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" />
+    <link href="./css/style.min.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <div class="container-desktop">
@@ -37,7 +41,7 @@
                 <a class="site-list__link" href="index.html"> Главная </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link"> фото и видео </a>
+                <a class="site-list__link site-list__link--active"> фото и видео </a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html"> форма отзыва </a>
@@ -129,11 +133,11 @@
                 />
               </picture>
             </a>
-            <div class="catalog__image-block--first">
+            <div class="catalog__image-first">
               <h3 class="catalog__image-subtitle">Неродные просторы</h3>
               <p class="catalog__image-author">Автор фото: Борис</p>
               <a
-                class="catalog__image-like catalog__image-like--first"
+                class="catalog__image-like-first"
                 href=""
                 aria-label="Проголосовать/результат голосования"
                 >1350</a
@@ -164,7 +168,7 @@
                     type="image/webp"
                     media="(min-width: 320px)"
                     srcset="
-                    ./img/photo-2-mobile.webp
+                    ./img/photo-2-mobile.webp 1x,
                     ./img/photo-2-mobile-2x.webp 2x"
                   />
                   <source
@@ -223,7 +227,7 @@
                     type="image/webp"
                     media="(min-width: 320px)"
                     srcset="
-                    ./img/photo-3-mobile.webp
+                    ./img/photo-3-mobile.webp 1x,
                     ./img/photo-2-mobile-2x.webp 2x"
                   />
                   <source
@@ -514,5 +518,6 @@
         </section>
       </footer>
     </div>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

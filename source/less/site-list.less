@@ -9,9 +9,6 @@
   );
 }
 
-.site-list__item {
-}
-
 .site-list__link {
   font-family: "PT SansB", Arial, sans-serif;
   font-size: 18px;
@@ -45,19 +42,19 @@
   border-bottom: 1px solid #81b3d2;
 }
 
-.site-list__link--active {
-}
-
 @media (min-width: @tablet-width) {
+
   .site-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background: none;
     margin: 0 29px 0 48px;
   }
+
   .site-list__item {
     text-align: left;
   }
+
   .site-list__link {
     background: none;
     border: none;
@@ -66,17 +63,21 @@
     display: inline-block;
     vertical-align: middle;
   }
+
   .site-list__link:hover {
     background: none;
     color: #81B3D2;
   }
+
   .site-list__link:active {
     background: none;
     color: rgba(0, 0, 0, 0.3);
   }
+
   .site-list__item:last-child .site-list__link {
     border: none;
   }
+
   .site-list__item:first-child .site-list__link {
     border-top: none;
   }
@@ -84,39 +85,73 @@
   .site-list__item:nth-child(4n + 2) {
     padding-right: 20px;
   }
+
   .site-list__item:nth-child(4n + 3) {
     grid-column-start: 4;
     grid-column-end: 5;
     text-align: right;
     padding-right: 9px;
   }
+
   .site-list__item:nth-child(4n + 4) {
     grid-column-start: 5;
     grid-column-end: 6;
     text-align: right;
   }
+
+  .site-list__link--active {
+    color: #766357;
+  }
+
+  .site-list__link--active:hover {
+    color: #604E43;
+  }
+
+  .site-list__link--active:active {
+    color: rgba(118, 99, 87, 0.3);
+  }
 }
+
 @media (min-width: @desktop-width) {
+
   .site-list {
     margin: 0;
   }
+
   .site-list__item {
     text-align: center;
   }
+
   .site-list__item:nth-child(4n+2) {
     padding-right: 4px;
   }
+
   .site-list__item:nth-child(4n + 3) {
     text-align: center;
     padding-right: 0;
   }
+
   .site-list__item:nth-child(4n + 4) {
     text-align: center;
   }
+
   .site-list__link:hover {
     background: none;
   }
+
   .site-list__link:active {
     background: none;
+  }
+
+  .site-list__link--active {
+    color: #766357;
+  }
+
+  .site-list__link--active:hover {
+    color: #604E43;
+  }
+
+  .site-list__link--active:active {
+    color: rgba(118, 99, 87, 0.3);
   }
 }

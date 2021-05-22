@@ -7,6 +7,9 @@
   overflow: hidden;
   z-index: 1;
   margin-bottom: 31px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-2x.jpg");
+  }
 }
 
 .welcome::after {
@@ -21,9 +24,6 @@
   background: url("../img/triangle.svg") no-repeat center bottom;
   background-size: cover;
 }
-.welcome__text {
-
-}
 
 .welcome-img {
   width: 282px;
@@ -33,26 +33,39 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .welcome {
     background: url(../img/back-tablet.jpg) no-repeat bottom center;
     padding: 55px 20px 71px;
     background-size: cover;
+    margin-bottom: 29px;
+    @media (min-resolution: 2dppx) {
+    background-image: url(../img/back-tablet-2x.jpg);
   }
+}
+
   .welcome-img {
     width: 461px;
     height: 350px;
   }
+
   .welcome::after {
     background: url("../img/intro-triangle-tablet.svg") no-repeat center bottom;
   }
 }
+
 @media (min-width: @desktop-width) {
+
   .welcome {
     background: url(../img/back-desktop.jpg) no-repeat top center;
     padding: 55px 20px 71px;
     background-size: cover;
     margin-bottom: 43px;
+    @media (min-resolution: 2dppx) {
+    background-image: url(../img/back-desktop-2x.jpg);
+    }
   }
+
   .welcome::after {
     background: url("../img/intro-triangle-desktop.svg") no-repeat center bottom;
   }

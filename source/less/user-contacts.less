@@ -1,28 +1,57 @@
 .user-contacts {
-padding: 0 20px;
-border-bottom: 1px solid #E5E5E5;
-margin-bottom: 30px;
+  padding: 0 20px 14px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 22px;
 }
+
 .user-contacts__title {
-margin-bottom: 27px;
+  margin-bottom: 15px;
 }
+
 .user-contacts__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .user-contacts__item {
- margin-bottom: 18px;
+  margin-bottom: 14px;
 }
+
 @media (min-width: @tablet-width) {
+
   .user-contacts {
     order: 3;
     width: 100%;
     padding: 0 60px;
     border-bottom: none;
+    margin-bottom: 25px;
   }
+
   .user-contacts__title {
-    margin-bottom: 17px;
+    margin-bottom: 23px;
   }
+
+  .user-contacts__item {
+    margin-bottom: 25px;
+}
+}
+
+@media (min-width: @desktop-width) {
+
+  .user-contacts {
+    margin-bottom: 26px;
+  }
+
+  .user-contacts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .user-contacts__title {
+    margin-bottom: 73px;
+}
 }
 

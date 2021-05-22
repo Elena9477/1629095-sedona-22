@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
-    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" />
+    <link rel="preload" href="./fonts/ptsans.woff" as="font" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" />
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" />
+    <link href="./css/style.min.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <div class="container-desktop">
@@ -27,7 +31,7 @@
             />
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -92,7 +96,11 @@
           <div class="advantages__content">
             <ul class="advantages__list">
               <li
-                class="advantages__list-item advantages__list-item--spec advantages__list-item--first"
+                class="
+                  advantages__list-item
+                  advantages__list-item--spec
+                  advantages__list-item--first
+                "
               >
                 <div class="advantages__item-wrap">
                   <div class="advantages__item-container">
@@ -117,32 +125,57 @@
                       <h5 class="advantages__item-subject">Сувениры</h5>
                       <p class="advantages__item-desc">
                         Не только китайского,
-                        <br class="desktop"/> но и местного производства!
+                        <br class="desktop" />
+                        но и местного производства!
                       </p>
                     </li>
                     <li class="advantages__item-nested advantages__item-food">
                       <h5 class="advantages__item-subject">Еда</h5>
                       <p class="advantages__item-desc">
                         Всегда заказывайте
-                        <br class="mobile"/>фирменный бургер, <br class="tablet" />вы не
-                        разочаруетесь!
+                        <br class="mobile" />фирменный бургер,
+                        <br class="advantages-break"/>вы не разочаруетесь!
                       </p>
                     </li>
                   </ul>
                 </div>
               </li>
               <li
-                class="advantages__list-item advantages__list-item--spec advantages__list-item--second"
+                class="
+                  advantages__list-item
+                  advantages__list-item--spec
+                  advantages__list-item--second
+                "
               >
                 <div class="advantages__item-wrap">
-                  <div class="advantages__item-container advantages__item-container--second">
-                    <h3 class="advantages__item-title advantages__item-title--second">
+                  <div
+                    class="
+                      advantages__item-container
+                      advantages__item-container--second
+                    "
+                  >
+                    <h3
+                      class="
+                        advantages__item-title advantages__item-title--second
+                      "
+                    >
                       Там есть мост дьявола
                     </h3>
-                    <p class="advantages__item-number advantages__item-number--second">&mdash; №2 &mdash;</p>
-                    <p class="advantages__item-text advantages__item-text--second">
+                    <p
+                      class="
+                        advantages__item-number advantages__item-number--second
+                      "
+                    >
+                      &mdash; №2 &mdash;
+                    </p>
+                    <p
+                      class="
+                        advantages__item-text advantages__item-text--second
+                      "
+                    >
                       Да, по нему можно пройти
-                      <br class="desktop"/> если вы осмелитесь, конечно
+                      <br class="desktop" />
+                      если вы осмелитесь, конечно
                     </p>
                   </div>
                 </div>
@@ -213,12 +246,41 @@
           <div class="address__adress">
             <picture>
               <source
+                type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="./img/video-desktop.jpg 1x, ./img/video-desktop.jpg 2x"
+                srcset="
+                  ./img/map-desktop.webp    1x,
+                  ./img/map-desktop-2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/map-tablet.webp    1x,
+                  ./img/map-tablet-2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 320px)"
+                srcset="
+                  ./img/map-mobile.webp    1x,
+                  ./img/map-mobile-2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./img/map-desktop.jpg    1x,
+                  ./img/map-desktop-2x.jpg 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/map-tablet.jpg 1x, ./img/map-tablet.jpg 2x"
+                srcset="
+                ./img/map-tablet.jpg 1x,
+                ./img/map-tablet-2x.jpg 2x"
               />
               <img
                 class="address__map"
@@ -253,21 +315,27 @@
             <ul class="contacts__social-list">
               <li class="contacts__social-item">
                 <a
-                  class="contacts__social-button contacts__social-button--twitter"
+                  class="
+                    contacts__social-button contacts__social-button--twitter
+                  "
                   href="#"
                   aria-label="Мы в твитере"
                 ></a>
               </li>
               <li class="contacts__social-item">
                 <a
-                  class="contacts__social-button contacts__social-button--facebook"
+                  class="
+                    contacts__social-button contacts__social-button--facebook
+                  "
                   href="#"
                   aria-label="Мы в Фейсбуке"
                 ></a>
               </li>
               <li class="contacts__social-item">
                 <a
-                  class="contacts__social-button contacts__social-button--youtube"
+                  class="
+                    contacts__social-button contacts__social-button--youtube
+                  "
                   href="#"
                   aria-label="Мы в Ютубе"
                 ></a>
@@ -291,9 +359,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-                    />
+                  <use xlink:href="./img/sprite.svg#html-logo"></use>
                   </svg>
                 </a>
               </li>
@@ -302,5 +368,6 @@
         </section>
       </footer>
     </div>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
