@@ -1,14 +1,14 @@
 const mainNav = document.querySelector(".main-nav");
 const menuToggle = document.querySelector(".main-nav__toggle");
 const form = document.querySelector(".review__form");
-const name = document.querySelector('.name');
-const surname = document.querySelector('.surname');
-const email = document.querySelector('.email');
-const phone = document.querySelector('.phone');
-const message = document.querySelector('.message');
-const mError = document.querySelector('.modal-error');
-const mCloseBtns = document.querySelectorAll('.modal-close');
-const mSuccess = document.querySelector('.modal-success');
+const name = document.querySelector(".name");
+const surname = document.querySelector(".surname");
+const email = document.querySelector(".email");
+const phone = document.querySelector(".phone");
+const message = document.querySelector(".message");
+const mError = document.querySelector(".modal-error");
+const mCloseBtns = document.querySelectorAll(".modal-close");
+const mSuccess = document.querySelector(".modal-success");
 
 mainNav.classList.add("main-nav--closed");
 menuToggle.classList.add("main-nav__toggle--v");
@@ -67,4 +67,3 @@ if (mCloseBtns) {
     });
   });
 }
-

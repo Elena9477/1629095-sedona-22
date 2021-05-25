@@ -11,7 +11,7 @@
 .advantages__desc-title {
   padding: 0;
   margin: 0 auto 33px;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -19,9 +19,9 @@
 }
 
 .advantages__desc-text {
-  padding: 0 0 42px;
+  padding: 0 0 40px;
   margin: 0 auto;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -40,7 +40,7 @@
     content: "";
     width: 768px;
     height: 37px;
-    background: url(../img/angle.svg) no-repeat center bottom;
+    background: url("../img/angle.svg") no-repeat center bottom;
     display: block;
     position: absolute;
     left: 50%;
@@ -89,12 +89,12 @@
 
 .advantages__list-item--first .advantages__item-wrap::after {
   content: "";
-  background: url(../img/photo-city@1x1.jpg) no-repeat left center;
-  width: 100%;
-  height: 260px;
   display: block;
   position: absolute;
+  background-image: url("../img/photo-city@1x1.jpg");
   background-size: cover;
+  width: 100%;
+  height: 260px;
   text-align: center;
   overflow: hidden;
 }
@@ -114,18 +114,22 @@
 
 .advantages__list-item--second .advantages__item-wrap::after {
   content: "";
-  background: url(../img/photo-bridge@1x1.jpg) no-repeat top left;
+  background-image: url("../img/photo-bridge@1x1.jpg");
+  background-size: cover;
   width: 100%;
   height: 260px;
   display: block;
   position: absolute;
-  background-size: cover;
   text-align: center;
   overflow: hidden;
 }
 
 .advantages__item-container {
-  padding-bottom: 40px;
+  padding-bottom: 39px;
+}
+
+.advantages__list-item--spec .advantages__item-container {
+  padding-bottom: 37px;
 }
 
 .advantages__list-item--second .advantages__item-container {
@@ -135,7 +139,7 @@
 .advantages__item-title {
   margin: 0;
   padding: 0;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -145,7 +149,7 @@
 .advantages__item-number {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -155,7 +159,7 @@
 .advantages__item-text {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -167,7 +171,7 @@
 
 .advantages__list-nested {
   margin: 0;
-  padding: 0 0 20px;
+  padding: 0 0 18px;
   list-style: none;
   background: #ffffff;
 }
@@ -179,7 +183,7 @@
 .advantages__item-subject {
   margin: 0;
   padding: 0;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   align-items: center;
@@ -190,7 +194,7 @@
 .advantages__item-desc {
   margin: 0;
   padding: 16px 43px 16px 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   align-items: center;
@@ -205,7 +209,7 @@
 .advantages__item-house::before {
   content: "";
   position: absolute;
-  background: url(../img/icon-house.svg) no-repeat top left;
+  background: url("../img/icon-house.svg") no-repeat top left;
   width: 39px;
   height: 37px;
   display: block;
@@ -222,7 +226,7 @@
 .advantages__item-souvenirs::before {
   content: "";
   position: absolute;
-  background: url(../img/icon-gift.svg) no-repeat top left;
+  background: url("../img/icon-gift.svg") no-repeat top left;
   width: 32px;
   height: 38px;
   display: block;
@@ -238,7 +242,7 @@
 .advantages__item-food::before {
   content: "";
   position: absolute;
-  background: url(../img/icon-burger.svg) no-repeat top left;
+  background: url("../img/icon-burger.svg") no-repeat top left;
   width: 40px;
   height: 35px;
   display: block;
@@ -251,7 +255,7 @@
 }
 
 .advantages__item-description {
-  margin: 0px auto -17px;
+  margin: 0 auto -17px;
   text-align: center;
   width: 247px;
   background-size: cover;
@@ -264,25 +268,26 @@
 .advantages__list-item--fifth .advantages__item-container {
   padding-bottom: 25px;
 }
+
 .advantages-break {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-
   .advantages {
     margin-bottom: 20px;
   }
 
   .advantages__desc {
-    margin-bottom: 84px;
+    margin-bottom: 82px;
   }
 
   .advantages__desc-title {
     font-size: 21px;
     line-height: 26px;
     width: 619px;
-    padding: 13px 0 0px;
+    padding: 13px 0 0;
+    margin: 0 auto 31px;
   }
 
   .advantages__desc-text {
@@ -305,9 +310,14 @@
     margin: 0;
     border-bottom: none;
   }
+
   .advantages__list-item--first .advantages__item-wrap::after {
-    background: url(../img/photo-city@tablet.jpg) no-repeat left center;
+    background: url("../img/photo-city@tablet.jpg") no-repeat left center;
+    background-size: cover;
+    position: relative;
+    height: auto;
   }
+
   .advantages__list-item--spec {
     width: 100%;
   }
@@ -315,7 +325,7 @@
   .advantages__list-nested {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0 61px;
+    padding: 60px 0 59px;
   }
 
   .advantages__item-nested {
@@ -408,17 +418,12 @@
   }
 
   .advantages__item-number {
-    margin: 0 auto 24px;
+    margin: 0 auto 23px;
   }
 
   .advantages__item-text {
     width: 190px;
     margin: 0 auto;
-  }
-
-  .advantages__list-item--first .advantages__item-wrap::after {
-    position: relative;
-    height: auto;
   }
 
   .advantages__list-item--second .advantages__item-wrap::after {
@@ -427,10 +432,10 @@
 
   .advantages__list-item--second .advantages__item-wrap::before {
     content: "";
-    background: url(../img/photo-bridge@tablet.jpg) no-repeat top left;
+    background: url("../img/photo-bridge@tablet.jpg") no-repeat top left;
+    background-size: cover;
     width: 100%;
     display: block;
-    background-size: cover;
   }
 
   .advantages__list-item--second {
@@ -443,13 +448,16 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .advantages {
-    margin-bottom: 19px;
-}
+    margin-bottom: 20px;
+  }
 
   .advantages__desc {
     margin-bottom: 71px;
+  }
+
+  .advantages__desc-title {
+    margin-bottom: 31px;
   }
 
   .advantages__list-item--spec .advantages__item-container {
@@ -457,10 +465,14 @@
     padding: 46px 0 58px;
   }
 
+  .advantages__list-item--second .advantages__item-container {
+    padding-bottom: 54px;
+  }
+
   .advantages__item-container {
     padding-bottom: 20px;
     min-height: 193px;
-}
+  }
 
   .advantages__item-title {
     margin: 0 auto 15px;
@@ -470,8 +482,13 @@
     width: 283px;
   }
 
+  .advantages__item-number {
+    margin: 0 auto 23px;
+  }
+
   .advantages__list-item--first .advantages__item-wrap::after {
-    background: url(../img/photo-city-desktop@1x.jpg) no-repeat left center;
+    background: url("../img/photo-city-desktop@1x.jpg") no-repeat left center;
+    background-size: cover;
   }
 
   .advantages__item-desc {
@@ -480,15 +497,16 @@
   }
 
   .advantages__list-nested {
-    padding: 60px 0 82px;
+    padding: 60px 0 78px;
   }
 
   .advantages__list-item--second .advantages__item-wrap::before {
-    background: url(../img/photo-bridge-desktop@1x.jpg) no-repeat top left;
+    background: url("../img/photo-bridge-desktop@1x.jpg") no-repeat top left;
+    background-size: cover;
   }
 
   .advantages__item-title--second {
-    margin: 4px auto 11px;
+    margin: 4px auto 15px;
   }
 
   .advantages-break {

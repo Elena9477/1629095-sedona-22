@@ -10,6 +10,7 @@
     <link rel="preload" href="./fonts/ptsansbold.woff" as="font" />
     <link href="./css/style.min.css" rel="stylesheet" />
   </head>
+
   <body class="page-body">
     <div class="container-desktop">
       <header class="page-header">
@@ -38,13 +39,15 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="index.html"> Главная </a>
+                <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--active"> фото и видео </a>
+                <a class="site-list__link site-list__link--active"
+                  >фото и видео</a
+                >
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html"> форма отзыва </a>
+                <a class="site-list__link" href="form.html">форма отзыва</a>
               </li>
               <li class="site-list__item">
                 <a
@@ -128,7 +131,7 @@
                 <img
                   class="catalog__image-pic"
                   src="./img/photo-1-mobile.jpg"
-                  srcset="./imgphoto-1-mobile-2x.jpg 2x"
+                  srcset="./img/photo-1-mobile-2x.jpg 2x"
                   alt="Неродные просторы"
                 />
               </picture>
@@ -168,8 +171,9 @@
                     type="image/webp"
                     media="(min-width: 320px)"
                     srcset="
-                    ./img/photo-2-mobile.webp 1x,
-                    ./img/photo-2-mobile-2x.webp 2x"
+                      ./img/photo-2-mobile.webp    1x,
+                      ./img/photo-2-mobile-2x.webp 2x
+                    "
                   />
                   <source
                     media="(min-width: 1200px)"
@@ -227,8 +231,9 @@
                     type="image/webp"
                     media="(min-width: 320px)"
                     srcset="
-                    ./img/photo-3-mobile.webp 1x,
-                    ./img/photo-2-mobile-2x.webp 2x"
+                      ./img/photo-3-mobile.webp    1x,
+                      ./img/photo-2-mobile-2x.webp 2x
+                    "
                   />
                   <source
                     media="(min-width: 1200px)"
@@ -265,8 +270,8 @@
             </li>
             <li class="catalog__image-item">
               <a class="catalog__image-link" href="#">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     type="image/webp"
                     media="(min-width: 1200px)"
                     srcset="
@@ -463,27 +468,21 @@
             <ul class="contacts__social-list">
               <li class="contacts__social-item">
                 <a
-                  class="
-                    contacts__social-button contacts__social-button--twitter
-                  "
+                  class="contacts__social-button contacts__social-button--twitter"
                   href="#"
                   aria-label="Мы в твитере"
                 ></a>
               </li>
               <li class="contacts__social-item">
                 <a
-                  class="
-                    contacts__social-button contacts__social-button--facebook
-                  "
+                  class="contacts__social-button contacts__social-button--facebook"
                   href="#"
                   aria-label="Мы в Фейсбуке"
                 ></a>
               </li>
               <li class="contacts__social-item">
                 <a
-                  class="
-                    contacts__social-button contacts__social-button--youtube
-                  "
+                  class="contacts__social-button contacts__social-button--youtube"
                   href="#"
                   aria-label="Мы в Ютубе"
                 ></a>

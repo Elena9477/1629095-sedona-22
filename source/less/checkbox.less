@@ -1,7 +1,6 @@
 .checkbox__label {
   position: relative;
-  font-family: "PT SansB", Arial, sans-serif;
-  padding-left: 35px;
+  font-family: "PT SansB", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -15,7 +14,7 @@
 
   &::after {
     content: "";
-    background: url(../img/tick-checkbox.svg) no-repeat top left;
+    background: url("../img/tick-checkbox.svg") no-repeat top left;
     width: 23px;
     height: 16px;
     display: none;
@@ -26,7 +25,7 @@
 
   &::before {
     content: "";
-    background: url(../img/form-checkbox.svg) no-repeat top left;
+    background: url("../img/form-checkbox.svg") no-repeat top left;
     position: absolute;
     width: 56px;
     height: 56px;
@@ -57,7 +56,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .checkbox__label {
     padding-left: 84px;
     padding-top: 19px;
@@ -65,7 +63,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .checkbox__label {
     padding-left: 81px;
   }

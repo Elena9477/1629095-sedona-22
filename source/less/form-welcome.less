@@ -1,14 +1,15 @@
 .form-welcome {
   position: relative;
-  background: #3f4a69 url(../img/bg-main-title-mobile.jpg) no-repeat left center;
+  background: #3f4a69 url("../img/bg-main-title-mobile.jpg") no-repeat left center;
   background-size: cover;
   padding: 51px 20px 67px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
   margin-bottom: 36px;
+
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/bg-main-title-mobile-2x.jpg);
+    background-image: url("../img/bg-main-title-mobile-2x.jpg");
   }
 
   &::after {
@@ -20,7 +21,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    background: url(../img/triangle.svg) no-repeat center bottom;
+    background: url("../img/triangle.svg") no-repeat center bottom;
     background-size: cover;
   }
 }
@@ -38,13 +39,15 @@
 }
 
 @media (min-width: @tablet-width) {
-
-  .form-welcome{
+  .form-welcome {
     padding: 92px 20px 117px;
     margin-bottom: 63px;
-    background: #3f4a69 url(../img/bg-main-title-tablet.jpg) no-repeat left center;
+    background: #3f4a69 url("../img/bg-main-title-tablet.jpg") no-repeat left center;
+    background-size: cover;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/bg-main-title-tablet-2x.jpg);
+      background-image: url("../img/bg-main-title-tablet-2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -59,13 +62,15 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .form-welcome {
     padding: 101px 20px 121px;
     margin-bottom: 114px;
-    background: #3f4a69 url(../img/bg-main-title-desktop.jpg) no-repeat left center;
+    background: #3f4a69 url("../img/bg-main-title-desktop.jpg") no-repeat left center;
+    background-size: cover;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/bg-main-title-desktop-2x.jpg);
+      background-image: url("../img/bg-main-title-desktop-2x.jpg");
+      background-size: cover;
     }
   }
 

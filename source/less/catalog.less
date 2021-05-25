@@ -1,15 +1,16 @@
 .catalog__welcome {
   position: relative;
-  background: #3f4a69 url(../img/bg-main-title-mobile.jpg) no-repeat left center;
+  background: #3f4a69 url("../img/bg-main-title-mobile.jpg") no-repeat left center;
   background-size: cover;
   padding: 51px 20px 67px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
   margin-bottom: 32px;
+
   @media (min-resolution: 2dppx) {
-  background-image: url(../img/bg-main-title-mobile-2x.jpg);
-}
+    background-image: url("../img/bg-main-title-mobile-2x.jpg");
+  }
 }
 
 .catalog__welcome-title {
@@ -33,7 +34,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  background: url(../img/triangle.svg) no-repeat center bottom;
+  background: url("../img/triangle.svg") no-repeat center bottom;
   background-size: cover;
 }
 
@@ -44,7 +45,7 @@
 .catalog__image-title {
   margin: 0 0 28px;
   padding: 0;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -54,7 +55,7 @@
 .catalog__image-text {
   margin: 0 auto 27px;
   padding: 0 22px 4px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -99,7 +100,7 @@
 .catalog__image-subtitle {
   margin: 0 auto;
   padding: 0;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -110,20 +111,21 @@
   padding: 0;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .catalog__image-like-first {
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   padding-left: 36px;
   position: relative;
 }
+
 .catalog__image-like-first::before {
   content: "";
   position: absolute;
-  background: url(../img/like-icon.svg) no-repeat top left;
+  background: url("../img/like-icon.svg") no-repeat top left;
   width: 23px;
   height: 21px;
   left: 1px;
@@ -133,7 +135,7 @@
 .catalog__image-like-list {
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT SansB", Arial, sans-serif;
+  font-family: "PT SansB", "Arial", sans-serif;
   padding-left: 36px;
   position: relative;
 }
@@ -141,7 +143,7 @@
 .catalog__image-like::before {
   content: "";
   position: absolute;
-  background: url(../img/like-icon.svg) no-repeat top left;
+  background: url("../img/like-icon.svg") no-repeat top left;
   width: 23px;
   height: 21px;
   left: 1px;
@@ -150,11 +152,12 @@
 
 @media (min-width: @tablet-width) {
   .catalog__welcome {
-    background-image: url(../img/bg-main-title-tablet.jpg);
+    background-image: url("../img/bg-main-title-tablet.jpg");
     padding: 51px 20px 78px;
     margin-bottom: 63px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/bg-main-title-tablet-2x.jpg);
+      background-image: url("../img/bg-main-title-tablet-2x.jpg");
     }
   }
 
@@ -252,16 +255,17 @@
 
 @media (min-width: @desktop-width) {
   .catalog__welcome {
-    background-image: url(../img/bg-main-title-desktop.jpg);
+    background-image: url("../img/bg-main-title-desktop.jpg");
     padding: 60px 20px 79px;
     margin-bottom: 102px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/bg-main-title-desktop-2x.jpg);
+      background-image: url("../img/bg-main-title-desktop-2x.jpg");
     }
   }
 
   .catalog__welcome::after {
-    background: url(../img/intro-triangle-desktop.svg) no-repeat center bottom;
+    background: url("../img/intro-triangle-desktop.svg") no-repeat center bottom;
   }
 
   .catalog__image {
@@ -303,7 +307,7 @@
   }
 
   .catalog__image-like-first::before {
-    background: url(../img/like-icon-desctop.svg) no-repeat top left;
+    background: url("../img/like-icon-desctop.svg") no-repeat top left;
     left: 3px;
   }
 
@@ -317,7 +321,7 @@
   }
 
   .catalog__image-like::before {
-    background: url(../img/like-icon-desctop.svg) no-repeat top left;
+    background: url("../img/like-icon-desctop.svg") no-repeat top left;
     left: 3px;
   }
 
